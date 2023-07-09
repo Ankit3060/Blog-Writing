@@ -1,0 +1,8 @@
+<%- include('partials/header'); -%>
+
+<% for(let i=0;i<posts.length;i++){ %>
+    <h1><%= posts[i].title %></h1>
+    <p><%= posts[i].content.substring(0 , 100) + "..." %></p>
+<% } %>
+
+<%- include('partials/footer'); -%> 
